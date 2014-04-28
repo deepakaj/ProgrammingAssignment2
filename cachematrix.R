@@ -43,10 +43,10 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 
-## Here lies a function that'll do the actual inverse solving, but take the 'list' from the previous function as an input
+## Here lies a function that'll do the actual inverse solving, but takes the 'list' from the previous function as an input
 cacheSolve <- function(x, ...) {
   
-  inv <-x$getInverse()
+  inv <- x$getInverse()
   
   if (!is.null(inv)) {
     message('Fetchig cached data. Neat!')
